@@ -1,0 +1,13 @@
+// Color
+$color-body: #f5fafe;
+$color-white: #ffffff;
+$color-dark: #333333;
+$color-gray: #BDBDBD;
+$color-accent: #ec1f46;
+$color-primary: #0a223d;
+
+// Mixins
+@mixin pseudo {
+  content: "";
+  position: absolute;
+}
