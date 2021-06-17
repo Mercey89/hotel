@@ -6,8 +6,65 @@ $color-gray: #BDBDBD;
 $color-accent: #ec1f46;
 $color-primary: #0a223d;
 
+// Radius
+$radius-small: 5px;
+$radius-middle: 10px;
+$radius-circle: 50%;
+
 // Mixins
 @mixin pseudo {
   content: "";
   position: absolute;
+}
+
+@mixin flx-x-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flx-xy-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin burger {
+  width: 30px;
+	height: 26px;
+	position: relative;
+	cursor: pointer;
+	&::before,
+	& span,
+	&::after {
+		@include pseudo;
+		width: 100%;
+		height: 2px;
+		background-color: $color-white;
+		transition: all 0.3s;
+	}
+	&::before {
+		top: 0;
+	}
+	& span {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&::after {
+		bottom: 0;
+	}
+	&._active {
+		transition: all 0.3s;
+		transform: rotate(180deg);
+		&::before {
+			top: 12px;
+			transform: rotate(-45deg);
+		}
+		& span {
+			transform: translateY(-50%) scale(0);
+		}
+		&::after {
+			bottom: 12px;
+			transform: rotate(45deg);
+		}
+	}
 }

@@ -4,13 +4,81 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hotel booking freebie">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="css/style.min.css">
   <title>Document</title>
 </head>
 <body>
   <div class="wrapper">
-    <header class="header"></header>
+      <header class="header">
+      <!--
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-item">
+              <a class="header__link" href="#"></a>
+            </div>
+            <div class="header__top-item">
+              <a class="header__link" href="#">
+                <span class="header__link-icon"></span>
+                <span class="header__link-text"></span>
+              </a>
+            </div>
+            <div class="header__top-item">
+              <a class="header__link" href="#">
+                <span class="header__link-icon"></span>
+                <span class="header__link-text"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      -->
+        <div class="header__main">
+          <div class="container">
+            <div class="header__main-inner">
+              <div class="header__main-item">
+                <a class="header__logo"  href="#"><img src="/images/logo.svg" alt="logo"></a>
+              </div>
+              <div class="header__main-item">
+                <form class="search-form" action="">
+                  <input class="search-form__input" type="text" placeholder="Search Location">
+                  <button class="search-form__button btn-accent" aria-label="search icon">
+                    <svg class="icon"><use xlink:href="sprite.svg#search"></use></svg>
+                  </button>
+                </form>
+              </div>
+              <div class="header__main-item">
+                <a class="header__link cart" href="#">
+                  <svg class="cart__icon icon"><use xlink:href="sprite.svg#shopping-cart"></use></svg>
+                  <span class="cart__value">2</span>
+                </a>
+                <a class="header__link profile" href="#">
+                  <div class="profile__avatar"><img src="/images/header-avatar.jpg" alt="avatar image"></div>
+                  <span class="profile__username">Nathan</span>
+                  <svg class="profile__icon icon"><use xlink:href="sprite.svg#arrow-thin"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <nav class="header__nav nav">
+              <a class="header__nav-logo" href="#"><img src="/images/logo-white.svg" alt="logo"></a>
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link" href="#">All Deals</a></li>
+                <li class="header__nav-item _active"><a class="header__nav-link" href="#">Hotels</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Activities</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Day Packages</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Restaurants</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Events</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Rodrigues</a></li>
+              </ul>
+              <span class="header__burger burger-js"><span></span></span>
+            </nav>
+          </div>
+        </div>
+      </header>
     <main class="main"></main>
     <footer class="footer"></footer>
   </div>

@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Mulish', sans-serif;
+	background-color: $color-body;
+	color: $color-dark;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.5;
+	font-size: 12px;
+	line-height: 20px;
 }
 
 .wrapper {
@@ -22,13 +24,32 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1130px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
 
-.svg-icon {
-	fill: currentColor;
+.container-fluid {
+	max-width: 1950px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+}
+
+.icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+
+.btn-accent {
+	color: $color-white;
+	background-color: $color-accent;
+	cursor: pointer;
+	border: 0;
 }
 
 .visually-hidden {
