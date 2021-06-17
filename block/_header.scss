@@ -54,6 +54,19 @@
 .cart {
   margin-right: 50px;
   position: relative;
+  &::before,
+  &::after {
+    @include pseudo;
+    width: 10px; height: 2px;
+    left: -13px; top: 7px;
+    background-color: #e7eaed;
+    animation: wind-cart 0.9s infinite;
+  }
+  &::after {
+    top: 12px;
+    width: 15px;
+    animation: wind-cart 0.7s infinite;
+  }
 }
 
 .cart__icon {
@@ -72,6 +85,7 @@
   border-radius: $radius-circle;
   font-size: 10px;
   @include flx-xy-center;
+  animation: pulse-cart 0.9s infinite;
 }
 
 
@@ -116,6 +130,10 @@
 
 .header__nav-item {
   flex-basis: 100%;
+  transition: all 0.2s ease-in-out;
+  &:not(:last-child) {
+    border-right: 1px dashed rgba(255,255,255,0.15);
+  }
   &:hover, &._active {
     background-color: $color-accent;
   }
