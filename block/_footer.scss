@@ -1,0 +1,160 @@
+.footer {
+  font-size: 14px;
+  color: $color-gray;
+  background-color: $color-primary;
+}
+
+.footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 90px 0;
+}
+
+.footer__logo {
+  flex-shrink: 0;
+  max-width: 150px;
+}
+
+.footer__logo-small {
+  display: none;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  font-size: inherit;
+  font-weight: 400;
+  color: $color-white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer__item-social {
+  margin-top: auto;
+}
+
+.footer__link {
+  color: inherit;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-social__title {
+  margin-bottom: 0;
+  margin-right: 25px;
+}
+
+.footer-social__list {
+  display: inherit;
+  gap: 10px;
+}
+
+.footer-social__link {
+  color: inherit;
+  display: flex;
+}
+
+.footer-social__link {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    &.footer-social__link--facebook {
+      color: $color-facebook;
+    }
+    &.footer-social__link--youtube {
+      color: $color-youtube;
+    }
+    &.footer-social__link--instagram {
+      color: $color-instagram;
+    }
+  }
+}
+
+.footer__main {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer__contacts,
+.submit-form {
+  flex-basis: 100%;
+}
+
+.footer__contacts-item {
+  display: flex;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__contacts-icon {
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.submit-form {
+  display: grid;
+  grid-gap: 10px;
+  font-size: 12px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2,max-content) 1fr max-content;
+}
+
+.submit-form__title {
+  font-size: 14px;
+  grid-column: span 2;
+}
+
+.submit-form__item {
+  padding: 10px 20px;
+  border-radius: $radius-small;
+  border: 0;
+}
+
+.submit-form__item-textarea {
+  width: 100%;
+  grid-column: span 2;
+  resize: none;
+}
+
+.submit-form__bottom {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-form__item-button {
+  padding: 15px 65px;
+}
+
+.submit-form__item-required {
+  padding: 0;
+}
+
+.footer__bottom,
+.footer__bottom-list {
+  display: flex;
+}
+
+.footer__bottom {
+  padding: 30px 0;
+  justify-content: space-between;
+}
+
+.footer__bottom-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer__bottom-link {
+  color: inherit;
+}
