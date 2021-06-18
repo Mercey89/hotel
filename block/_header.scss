@@ -4,7 +4,6 @@
 }
 
 .header__link {
-  color: inherit;
   transition: all 0.2s ease-in-out;
   &:hover {
     color: $color-accent;
@@ -143,4 +142,26 @@
   min-height: 80px;
   @include flx-xy-center;
   color: inherit;
+}
+
+.breadcrumbs__list {
+  padding: 15px 0;
+  display: flex;
+}
+
+.breadcrumbs__item {
+  &._current {
+    color: $color-accent;
+  }
+  &:not(:last-child) {
+    margin-right: 15px;
+    padding-right: 15px;
+    position: relative;
+    &::before {
+      content: "/";
+      position: absolute;
+      top: 50%; right: -2px;
+      transform: translateY(-50%);
+    }
+  }
 }

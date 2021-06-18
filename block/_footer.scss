@@ -38,10 +38,6 @@
   margin-top: auto;
 }
 
-.footer__link {
-  color: inherit;
-}
-
 .footer-social {
   display: flex;
 }
@@ -57,8 +53,8 @@
 }
 
 .footer-social__link {
-  color: inherit;
   display: flex;
+  color: inherit;
 }
 
 .footer-social__link {
@@ -153,8 +149,4 @@
   &:not(:last-child) {
     margin-right: 10px;
   }
-}
-
-.footer__bottom-link {
-  color: inherit;
 }

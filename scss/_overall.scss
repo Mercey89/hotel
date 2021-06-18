@@ -39,6 +39,14 @@ body {
 	display: flex;
 }
 
+.link {
+	color: inherit;
+	transition: all 0.1s ease-in-out;
+	&:hover {
+		color: $color-accent;
+	}
+}
+
 .icon {
 	display: inline-block;
 	width: 20px;
