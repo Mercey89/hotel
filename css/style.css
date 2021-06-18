@@ -419,6 +419,7 @@ select {
 .breadcrumbs__list {
   padding: 15px 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs__item._current {
@@ -585,6 +586,7 @@ select {
 
 .footer__bottom {
   padding: 30px 0;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -728,6 +730,12 @@ main {
 @media (max-width: 426px) {
   .submit-form__item {
     grid-column: span 2;
+  }
+  .footer__bottom {
+    padding: 0 0 30px;
+  }
+  .footer__bottom-list {
+    flex-wrap: inherit;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -93,4 +93,10 @@
   .submit-form__item {
     grid-column: span 2;
   }
+  .footer__bottom {
+    padding: 0 0 30px;
+  }
+  .footer__bottom-list {
+    flex-wrap: inherit;
+  }
 }
