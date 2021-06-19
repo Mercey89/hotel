@@ -143,30 +143,3 @@
   @include flx-xy-center;
   color: inherit;
 }
-
-.breadcrumbs {
-  margin-bottom: 25px;
-}
-
-.breadcrumbs__list {
-  padding: 15px 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.breadcrumbs__item {
-  &._current {
-    color: $color-accent;
-  }
-  &:not(:last-child) {
-    margin-right: 15px;
-    padding-right: 15px;
-    position: relative;
-    &::before {
-      content: "/";
-      position: absolute;
-      top: 50%; right: -2px;
-      transform: translateY(-50%);
-    }
-  }
-}

@@ -3,7 +3,7 @@
 @import "normalize";
 @import "anim";
 
-// block
+// Block
 @import "../block/header";
 @import "../block/hero";
 @import "../block/package";
@@ -12,6 +12,10 @@
 @import "../block/submit";
 @import "../block/activities";
 @import "../block/footer";
+
+// Component
+@import "../block/component/star-rating";
+@import "../block/component/breadcrumbs";
 
 // media
 @import "media";

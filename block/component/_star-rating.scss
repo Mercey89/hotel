@@ -1,0 +1,11 @@
+.star-rating {
+  display: flex;
+}
+
+.star-rating__icon {
+  color: #f2994a;
+  width: 12px; height: 12px;
+  &:not(:last-child) {
+    margin-right: 3px;
+  }
+}
