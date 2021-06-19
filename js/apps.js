@@ -3,12 +3,16 @@ $(document).ready(function () {
     $('.header__nav-item').removeClass('_active');
     $(this).addClass('_active');
   });
-  $('.burger-js').click(function() {
-    $('.burger-js,.menu-js').toggleClass('_active');
+  $('.header__burger').click(function() {
+    $('.header__burger,.menu-js').toggleClass('_active');
     $('body').toggleClass('_lock');
   });
-  $('.package-menu__item').click(function() {
-    $('.package-menu__item').removeClass('_active');
+  $('.other__burger').click(function() {
+    $('.other__burger,.other-js').toggleClass('_active');
+    $('body').toggleClass('_lock');
+  });
+  $('.other-menu__item').click(function() {
+    $('.other-menu__item').removeClass('_active');
     $(this).addClass('_active');
   });
 })
