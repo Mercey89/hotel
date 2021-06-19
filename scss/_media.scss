@@ -88,6 +88,22 @@
   .cart {
     margin-right: 15px;
   }
+  .package__head {
+    grid-template-columns: 1fr repeat(2, max-content);
+  }
+  .package__title {
+    grid-column: span 3;
+  }
+  .user-rating__text {
+    display: none;
+  }
+  .package__user-rating {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .package__offer {
+    grid-row: 1;
+  }
 }
 
 @media (max-width: 426px) {

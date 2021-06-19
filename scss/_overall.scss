@@ -54,10 +54,10 @@ body {
 }
 
 .btn-accent {
+	border: 0;
+	cursor: pointer;
 	color: $color-white;
 	background-color: $color-accent;
-	cursor: pointer;
-	border: 0;
 }
 
 .visually-hidden {
