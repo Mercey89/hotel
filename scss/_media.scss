@@ -23,7 +23,7 @@
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 875px) {
   .footer__top {
     padding: 30px 0;
     flex-direction: column;
@@ -46,13 +46,14 @@
     margin-top: 10px;
     width: 100%;
   }
-  .footer-social {
+  .social {
     flex-direction: column;
   }
-  .footer-social__title {
+  .social__title {
     margin-bottom: 5px;
   }
   .footer__main {
+    margin-bottom: 15px;
     flex-direction: column;
   }
 }
