@@ -7,12 +7,12 @@ $(document).ready(function () {
     $('.header__burger,.menu-js').toggleClass('_active');
     $('body').toggleClass('_lock');
   });
-  $('.other__burger').click(function() {
-    $('.other__burger,.other-js').toggleClass('_active');
+  $('.package__burger').click(function() {
+    $('.package__burger,.package-js').toggleClass('_active');
     $('body').toggleClass('_lock');
   });
-  $('.other-menu__item').click(function() {
-    $('.other-menu__item').removeClass('_active');
+  $('.package-menu__item').click(function() {
+    $('.package-menu__item').removeClass('_active');
     $(this).addClass('_active');
   });
 })
@@ -21,12 +21,12 @@ $(document).ready(function () {
 const $items = $('.hero-slider__list').children()
 const max = $items.length - 1
 let i = 0
-$('.hero-slider__btn--next').click(function(){
+$('.hero-slider__btn--next').click(function() {
   $items.eq(i).removeClass('_active')
   i = (i + 1 < $items.length) ? i + 1 : 0;
   $items.eq(i).addClass('_active');
 });
-$('.hero-slider__btn--prev').click(function(){
+$('.hero-slider__btn--prev').click(function() {
   $items.eq(i).removeClass('_active')
   i = (i > 0) ? i - 1 : max;
   $items.eq(i).addClass('_active');

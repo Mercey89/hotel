@@ -69,62 +69,221 @@
         </div>
       </header>
     <main class="main">
-      <section class="package">
+      <section class="hero">
         <div class="container">
-          <div class="package__inner">
-            <div class="package__head">
-              <div class="package__star-rating star-rating">
+          <div class="hero__inner">
+            <div class="hero__head">
+              <div class="hero__star-rating star-rating">
                 <svg class="star-rating__icon icon"><use xlink:href="sprite.svg#rating-star-filled"></use></svg>
                 <svg class="star-rating__icon icon"><use xlink:href="sprite.svg#rating-star-filled"></use></svg>
                 <svg class="star-rating__icon icon"><use xlink:href="sprite.svg#rating-star-filled"></use></svg>
                 <svg class="star-rating__icon icon"><use xlink:href="sprite.svg#rating-star-filled"></use></svg>
                 <svg class="star-rating__icon icon"><use xlink:href="sprite.svg#rating-star"></use></svg>
               </div>
-              <h2 class="package__title">Grand hilton hotel</h2>
-              <span class="package__offer">Flash Offer</span>
-              <span class="package__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</span>
-              <div class="package__user-rating user-rating">
+              <h2 class="hero__title">Grand hilton hotel</h2>
+              <span class="hero__offer">Flash Offer</span>
+              <span class="hero__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</span>
+              <div class="hero__user-rating user-rating">
                 <div class="user-rating__text">User Ratings</div>
                 <div class="user-rating__value">4.5/<span>5</span></div>
               </div>
             </div>
-            <div class="package__main">
-              <div class="package__card package__slider">
-                <div class="package__slider-item">
-                  <img class="package__slider-img" src="/images/slider/01.jpg" alt="slider image">
+            <div class="hero__main">
+              <div class="hero__card hero__slider">
+                <div class="hero__slider-item">
+                  <img class="hero__slider-img" src="/images/slider/01.jpg" alt="slider image">
                 </div>
               </div>
-              <div class="package__card">
-                <div class="package__card-item">
-                  <div class="package__price">
-                    <div class="package__price-text">price starts as</div>
-                    <div class="package__price-value">$ 8,500</div>
-                    <div class="package__price-text">per room / night</div>
+              <div class="hero__card">
+                <div class="hero__card-item">
+                  <div class="hero__price">
+                    <div class="hero__price-text">price starts as</div>
+                    <div class="hero__price-value">$ 8,500</div>
+                    <div class="hero__price-text">per room / night</div>
                   </div>
-                  <div class="package__info">
-                    <div class="package__info-item">
-                      <svg class="package__card-icon icon"><use xlink:href="sprite.svg#user"></use></svg>
-                      <span class="package__card-text">2 x Guests</span>
+                  <div class="hero__info">
+                    <div class="hero__info-item">
+                      <svg class="hero__card-icon icon"><use xlink:href="sprite.svg#user"></use></svg>
+                      <span class="hero__card-text">2 x Guests</span>
                     </div>
-                    <div class="package__info-item">
-                      <svg class="package__card-icon icon"><use xlink:href="sprite.svg#home"></use></svg>
-                      <span class="package__card-text">1 x Room</span>
+                    <div class="hero__info-item">
+                      <svg class="hero__card-icon icon"><use xlink:href="sprite.svg#home"></use></svg>
+                      <span class="hero__card-text">1 x Room</span>
                     </div>
                   </div>
                 </div>
-                <div class="package__card-item">
-                  <span class="package__call-text">Quick Booking</span>
-                  <span class="package__call-item">
-                    <svg class="package__card-icon icon"><use xlink:href="sprite.svg#phone-call-stroke"></use></svg>
-                    <span class="package__call-text">12100</span>
+                <div class="hero__card-item">
+                  <span class="hero__call-text">Quick Booking</span>
+                  <span class="hero__call-item">
+                    <svg class="hero__card-icon icon"><use xlink:href="sprite.svg#phone-call-stroke"></use></svg>
+                    <span class="hero__call-text">12100</span>
                   </span>
                 </div>
-                <div class="package__card-item">
-                  <a class="package__card-button btn-accent" href="#">View Other Options</a>
+                <div class="hero__card-item">
+                  <a class="hero__card-button btn-accent" href="#">View package Options</a>
                 </div>
               </div>
-              <div class="package__card">
+              <div class="hero__card">
                 <img src="/images/map.jpg" style="width: 100%; height: 100%; object-fit: cover;"alt="map">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="package">
+        <div class="container">
+          <div class="package__inner">
+            <nav class="package-menu">
+              <ul class="package-menu__list package-js">
+                <li class="package-menu__item _active">Package Summery</a></li>
+                <li class="package-menu__item">Hotel Information</a></li>
+                <li class="package-menu__item">Rooms</a></li>
+                <li class="package-menu__item">Facilities & Activities</a></li>
+                <li class="package-menu__item">Dining & Entertainment</a></li>
+                <li class="package-menu__item">Reviews </a></li>
+                <li class="package-menu__item">Questions & Answers</a></li>
+              </ul>
+              <h2 class="package-menu__title main-title">Package Summery</h2>
+              <span class="package__burger burger-js"><span></span></span>
+            </nav>
+            <h2 class="package__title main-title">Package Summery</h2>
+            <div class="package-cards">
+              <div class="package-cards__item">
+                <div class="package-card">
+                  <div class="package-card__head"><h3 class="package-card__title">Package Highlights</h3></div>
+                  <ul class="package-card__list">
+                    <li class="package-card__item">
+                      <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                      <a class="package-card__link link" href="#">Half Board/ All Inclusive</a></li>
+                    <li class="package-card__item">
+                      <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                      <a class="package-card__link link" href="#">Child Under 11 Years Stay Free</a></li>
+                    <li class="package-card__item">
+                      <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                      <a class="package-card__link link" href="#">LUX* Me Spa</a></li>
+                    <li class="package-card__item">
+                      <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                      <a class="package-card__link link" href="#">Luxurious 5-Star Hotel</a></li>
+                    <li class="package-card__item">
+                      <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                      <a class="package-card__link link" href="#">Banyan An Adult Only Zone</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="package-cards__item">
+                <div class="package-card">
+                  <div class="package-card__head">
+                    <h3 class="package-card__title">Offer Details</h3>
+                    <span class="package-card__valid">* Valid until 30 April 2020</span>
+                  </div>
+                  <ul class="package-card__list">
+                    <li class="package-card__item">
+                      <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                      <a class="package-card__link link" href="#">Benefit from a special discounted CHILL’OUT OFFER at Grand Hilton Hotel.</a></li>
+                    <li class="package-card__item">
+                      <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                      <a class="package-card__link link" href="#">10th March - 30th April 2020</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="package-cards__item package-cards__item--xxl">
+                <div class="package-card">
+                  <div class="package-card__head"><h3 class="package-card__title">Package Summery Details</h3></div>
+                  <div class="package-card__side">
+                    <ul class="package-card__list package-card__list--xxl">
+                      <li class="package-card__item"><h3 class="package-card__item-title">Purchase Inclusions</h3></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Room as per selection</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Half Board or All Inclusive Meal Plan</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Complimentary Land & Water activities</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Child Under 11 years old stays free</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Free Wi-Fi</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Free Secure Parking</a></li>
+                    </ul>
+                    <ul class="package-card__list package-card__list--xxl">
+                      <li class="package-card__item"><h3 class="package-card__item-title">Complimentary Land Based Activities</h3></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Gym</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Beach Volley</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Table tennis</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Soccer balls</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Yoga</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Unlimited access to driving range</a></li>
+                    </ul>
+                    <ul class="package-card__list package-card__list--xxl">
+                      <li class="package-card__item"><h3 class="package-card__item-title">Complimentary Water Based Activities</h3></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Water skiing</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Windsurfing</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Pedal boats</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Kayaking</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Aqua Gym</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Glass bottom boat trips</a></li>
+                    </ul>
+                  </div>
+                  <div class="package-card__side">
+                    <ul class="package-card__list package-card__list--xxl">
+                      <li class="package-card__item"><h3 class="package-card__item-title">Meal Plan Available</h3></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Half Board</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">All Inclusive</a></li>
+                    </ul>
+                    <ul class="package-card__list package-card__list--xxl">
+                      <li class="package-card__item"><h3 class="package-card__item-title">Entertainment</h3></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Live music</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">DJ & Mauritian Dance Show</a></li>
+                    </ul>
+                    <ul class="package-card__list package-card__list--xxl">
+                      <li class="package-card__item"><h3 class="package-card__item-title">Check In & Check Out</h3></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Check In Time 14:00</a></li>
+                      <li class="package-card__item">
+                        <svg class="package-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
+                        <a class="package-card__link link" href="#">Check Out Time 11:00</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -132,161 +291,7 @@
       </section>
       <section class="other">
         <div class="container">
-          <div class="other__inner">
-            <nav class="other-menu">
-              <ul class="other-menu__list other-js">
-                <li class="other-menu__item _active">Package Summery</a></li>
-                <li class="other-menu__item">Hotel Information</a></li>
-                <li class="other-menu__item">Rooms</a></li>
-                <li class="other-menu__item">Facilities & Activities</a></li>
-                <li class="other-menu__item">Dining & Entertainment</a></li>
-                <li class="other-menu__item">Reviews </a></li>
-                <li class="other-menu__item">Questions & Answers</a></li>
-              </ul>
-              <h2 class="other-menu__title main-title">Package Summery</h2>
-              <span class="other__burger burger-js"><span></span></span>
-            </nav>
-            <h2 class="other__title main-title">Package Summery</h2>
-            <div class="other-cards">
-              <div class="other-cards__item">
-                <div class="other-card">
-                  <div class="other-card__head"><h3 class="other-card__title">Package Highlights</h3></div>
-                  <ul class="other-card__list">
-                    <li class="other-card__item">
-                      <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                      <a class="other-card__link link" href="#">Half Board/ All Inclusive</a></li>
-                    <li class="other-card__item">
-                      <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                      <a class="other-card__link link" href="#">Child Under 11 Years Stay Free</a></li>
-                    <li class="other-card__item">
-                      <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                      <a class="other-card__link link" href="#">LUX* Me Spa</a></li>
-                    <li class="other-card__item">
-                      <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                      <a class="other-card__link link" href="#">Luxurious 5-Star Hotel</a></li>
-                    <li class="other-card__item">
-                      <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                      <a class="other-card__link link" href="#">Banyan An Adult Only Zone</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="other-cards__item">
-                <div class="other-card">
-                  <div class="other-card__head">
-                    <h3 class="other-card__title">Offer Details</h3>
-                    <span class="other-card__valid">* Valid until 30 April 2020</span>
-                  </div>
-                  <ul class="other-card__list">
-                    <li class="other-card__item">
-                      <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                      <a class="other-card__link link" href="#">Benefit from a special discounted CHILL’OUT OFFER at Grand Hilton Hotel.</a></li>
-                    <li class="other-card__item">
-                      <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                      <a class="other-card__link link" href="#">10th March - 30th April 2020</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="other-cards__item other-cards__item--xxl">
-                <div class="other-card">
-                  <div class="other-card__head"><h3 class="other-card__title">Package Summery Details</h3></div>
-                  <div class="other-card__side">
-                    <ul class="other-card__list other-card__list--xxl">
-                      <li class="other-card__item"><h3 class="other-card__item-title">Purchase Inclusions</h3></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Room as per selection</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Half Board or All Inclusive Meal Plan</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Complimentary Land & Water activities</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Child Under 11 years old stays free</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Free Wi-Fi</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Free Secure Parking</a></li>
-                    </ul>
-                    <ul class="other-card__list other-card__list--xxl">
-                      <li class="other-card__item"><h3 class="other-card__item-title">Complimentary Land Based Activities</h3></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Gym</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Beach Volley</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Table tennis</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Soccer balls</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Yoga</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Unlimited access to driving range</a></li>
-                    </ul>
-                    <ul class="other-card__list other-card__list--xxl">
-                      <li class="other-card__item"><h3 class="other-card__item-title">Complimentary Water Based Activities</h3></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Water skiing</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Windsurfing</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Pedal boats</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Kayaking</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Aqua Gym</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Glass bottom boat trips</a></li>
-                    </ul>
-                  </div>
-                  <div class="other-card__side">
-                    <ul class="other-card__list other-card__list--xxl">
-                      <li class="other-card__item"><h3 class="other-card__item-title">Meal Plan Available</h3></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Half Board</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">All Inclusive</a></li>
-                    </ul>
-                    <ul class="other-card__list other-card__list--xxl">
-                      <li class="other-card__item"><h3 class="other-card__item-title">Entertainment</h3></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Live music</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">DJ & Mauritian Dance Show</a></li>
-                    </ul>
-                    <ul class="other-card__list other-card__list--xxl">
-                      <li class="other-card__item"><h3 class="other-card__item-title">Check In & Check Out</h3></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Check In Time 14:00</a></li>
-                      <li class="other-card__item">
-                        <svg class="other-card__icon icon"><use xlink:href="sprite.svg#checked"></use></svg>
-                        <a class="other-card__link link" href="#">Check Out Time 11:00</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="other__inner"></div>
         </div>
       </section>
     </main>
