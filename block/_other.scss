@@ -1,3 +1,91 @@
 .other {
   margin-bottom: 70px;
 }
+.other__inner {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 500px);
+}
+
+.other__title {
+  margin-bottom: 50px;
+}
+
+.other__card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: $radius-middle;
+  &--xxl {
+    flex-direction: row;
+    grid-column: span 2;
+  }
+}
+
+.other__card-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.other__card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.other__card-info {
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+  color: $color-white;
+  background-color: $color-primary;
+}
+
+.other__card-title {
+  margin: 7px 0 25px;
+}
+
+.other__card-paragraph {
+  flex: 1;
+}
+
+.other__info {
+  margin-bottom: 30px;
+}
+
+.other__info-item {
+  &:not(:last-child) {
+    margin-bottom: 7px;
+  }
+}
+
+.other__info-icon {
+  margin-right: 10px;
+}
+
+.other__bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.other__bottom-sale {
+  text-decoration: line-through;
+  opacity: .8;
+}
+
+.other__bottom-price {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.other__bottom-button {
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 25px;
+}

@@ -29,12 +29,6 @@ body {
 	margin: 0 auto;
 }
 
-.container-fluid {
-	max-width: 1950px;
-	padding: 0 15px;
-	margin: 0 auto;
-}
-
 .flex {
 	display: flex;
 }
@@ -51,6 +45,19 @@ body {
 	display: inline-block;
 	width: 20px;
 	height: 20px;
+}
+
+.main-title {
+	font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .btn-accent {
