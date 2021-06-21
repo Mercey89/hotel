@@ -25,6 +25,7 @@ $(document).ready(function () {
     fade: true,
     cssEase: 'linear'
   });
+
   $('.review__slider').slick({
     dots: true,
     infinite: true,
