@@ -15,20 +15,21 @@ $(document).ready(function () {
     $('.package-menu__item').removeClass('_active');
     $(this).addClass('_active');
   });
-})
 
-/*
-const $items = $('.hero-slider__list').children()
-const max = $items.length - 1
-let i = 0
-$('.hero-slider__btn--next').click(function() {
-  $items.eq(i).removeClass('_active')
-  i = (i + 1 < $items.length) ? i + 1 : 0;
-  $items.eq(i).addClass('_active');
-});
-$('.hero-slider__btn--prev').click(function() {
-  $items.eq(i).removeClass('_active')
-  i = (i > 0) ? i - 1 : max;
-  $items.eq(i).addClass('_active');
-});
-*/
+  $('.hero__slider').slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
+  $('.review__slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
+})
