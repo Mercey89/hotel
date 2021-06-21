@@ -1,3 +1,59 @@
-.review__title {
+.review {
   margin-bottom: 70px;
+}
+
+.review__title {
+  margin-bottom: 110px;
+}
+
+.review__data {
+  text-align: center
+}
+
+.review__inner {
+  @include flx-xy-center;
+}
+
+.review__slider-item {
+  max-width: 720px;
+  padding: 30px 13.89%;
+  @include flx-x-center;
+  flex-direction: column;
+  background-color: $color-white;
+  border-radius: $radius-middle;
+  position: relative;
+  &::before,
+  &::after {
+    @include pseudo;
+    width: 70px;
+    height: 45px;
+  }
+  &::before {
+    left: 30px; top: 30px;
+    background: url(/images/quotation.svg) no-repeat;
+  }
+  &::after {
+    right: 30px; bottom: 30px;
+    background: url(/images/quotation.svg) no-repeat;
+    transform: rotate(-180deg);
+  }
+}
+
+.review__avatar {
+  margin-top: -75px;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: $radius-circle;
+  margin-bottom: 15px;
+}
+
+.review__avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review__star-rating {
+  margin-bottom: 20px;
 }
