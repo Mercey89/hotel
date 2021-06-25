@@ -829,13 +829,13 @@ select {
 .review__slider-item::before {
   left: 30px;
   top: 30px;
-  background: url(images/quotation.svg) no-repeat;
+  background: url(../images//quotation.svg) no-repeat;
 }
 
 .review__slider-item::after {
   right: 30px;
   bottom: 30px;
-  background: url(images/quotation.svg) no-repeat;
+  background: url(../images//quotation.svg) no-repeat;
   transform: rotate(-180deg);
 }
 
@@ -885,7 +885,7 @@ select {
 .submit {
   padding: 92px 0;
   margin-bottom: 60px;
-  background: url(images/newsletter-bg.jpg) no-repeat;
+  background: url(../images//newsletter-bg.jpg) no-repeat;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -1220,11 +1220,11 @@ select {
 
 .slick-arrow.slick-prev {
   left: 30px;
-  background: url(images/icons/arrow-prev.svg) no-repeat;
+  background: url(../images//icons/arrow-prev.svg) no-repeat;
 }
 
 .slick-arrow.slick-next {
-  background: url(images/icons/arrow-next.svg) no-repeat;
+  background: url(../images//icons/arrow-next.svg) no-repeat;
   right: 30px;
 }
 
