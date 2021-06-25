@@ -32,11 +32,11 @@
   }
   &::before {
     left: 30px; top: 30px;
-    background: url(/images/quotation.svg) no-repeat;
+    background: url(images/quotation.svg) no-repeat;
   }
   &::after {
     right: 30px; bottom: 30px;
-    background: url(/images/quotation.svg) no-repeat;
+    background: url(images/quotation.svg) no-repeat;
     transform: rotate(-180deg);
   }
 }
